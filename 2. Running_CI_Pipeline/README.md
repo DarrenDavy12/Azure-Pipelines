@@ -10,6 +10,6 @@ Now it’s time to run this pipeline, first I hit save and queue and then leave 
 
 
 
-Once [I](http://I.ve)’ve hit save and run, it will start build the pipeline for us and we wait until all the tasks are done → 
+Once I’ve hit save and run, it will start build the pipeline for us and we wait until all the tasks are done → 
 
 ![Untitled 2](https://user-images.githubusercontent.com/42151912/209810112-4f8ee20c-76ae-4583-ab65-07932e70aed0.png)
