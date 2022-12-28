@@ -5,11 +5,10 @@ To start off I head over to Azure DevOps website, create project and give name s
 Give name and select public → 
 
 ![Untitled](https://user-images.githubusercontent.com/42151912/209808363-f30c316e-4a64-4410-ad25-46e2170f8d52.png)
-![Untitled]((Azure)%20Creating%20Java%20CI%20pipeline%20ebe0f4a368da4c2bb8287780e416de41/Untitled.png)
 
 Then I head over to Pipelines/Pipelines on the dashboard → 
 
-![Untitled]((Azure)%20Creating%20Java%20CI%20pipeline%20ebe0f4a368da4c2bb8287780e416de41/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/42151912/209808530-8292214f-68ea-4a50-92bf-796ad58f67de.png)
 
 I would click create pipeline and choose the SCM system we want to use, the application we are using is available on GitHub, I click on Use Classic editor without YAML and click GitHub → 
 
