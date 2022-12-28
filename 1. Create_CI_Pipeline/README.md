@@ -47,16 +47,20 @@ In the side window for maven:
 
 I use Corbertura for my coverage tool and leave everything else as default → 
 
-![Untitled]((Azure)%20Creating%20Java%20CI%20pipeline%20ebe0f4a368da4c2bb8287780e416de41/Untitled%208.png)
+![Untitled 8](https://user-images.githubusercontent.com/42151912/209809167-cb0e9d76-d419-4446-8572-4b33791ff424.png)
+
 
 So this task will run Maven, clean package and generate the jar file. Then that jar file needs to be past through those two different tasks. 
 
-![Untitled]((Azure)%20Creating%20Java%20CI%20pipeline%20ebe0f4a368da4c2bb8287780e416de41/Untitled%209.png)
+![Untitled 9](https://user-images.githubusercontent.com/42151912/209809218-49125a97-f6b1-4ff8-8f62-70131a43ad88.png)
+
 
 The first one is to copy the jar files or the artifacts into a folder called Build or Artifact Staging. 
 
-![Untitled]((Azure)%20Creating%20Java%20CI%20pipeline%20ebe0f4a368da4c2bb8287780e416de41/Untitled%2010.png)
+![Untitled 10](https://user-images.githubusercontent.com/42151912/209809251-1ada43c3-3e30-443e-8ad5-07a675db6c6a.png)
+
 
 Publish build artifact Then when published into the artifact, into another folder called drop. This means the Artifact I have a folder called drop inside of it and have my jar file for the application → 
 
-![Untitled]((Azure)%20Creating%20Java%20CI%20pipeline%20ebe0f4a368da4c2bb8287780e416de41/Untitled%2011.png)
+![Untitled 11](https://user-images.githubusercontent.com/42151912/209809314-e9dcb4cf-bacb-4eb2-bed6-6626722fee47.png)
+
