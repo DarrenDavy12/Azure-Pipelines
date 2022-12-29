@@ -11,7 +11,7 @@ Then I got to repos → files, then at the top click on the mini drop down menu 
 ![Untitled 1](https://user-images.githubusercontent.com/42151912/210010271-419edac9-7444-4a0e-babf-88830c814fdf.png)
 
 
-After that, I selected clone (top left corner) and choose clone in VS Code, copied the generated password and selected where I wanted to store the repository: 
+After that, I selected clone (top left corner) and choose clone in VS Code, copied the generated password and selected a directory where I wanted to store the repository: 
 
 ![Untitled 2](https://user-images.githubusercontent.com/42151912/210010364-38f1d4ed-4b34-4d60-9c30-aa596df8752d.png)
 
