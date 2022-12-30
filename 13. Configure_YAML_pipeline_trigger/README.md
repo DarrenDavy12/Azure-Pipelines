@@ -1,4 +1,4 @@
-# Configure YAML pipeline trigger:
+# Configure YAML pipeline trigger
 
 
 First I changed my trigger, referenced my branch of my repo under trigger in my YAML file for the pipeline then hit save: 
