@@ -1,14 +1,16 @@
 # Azure Repo - Migrate, Commit, Push and Merge Code
 
+
 Code Management with Azure Repos
 
 Azure Repos - It is a version control tool that you could use to manage your code, whether you’re a software engineer working in a single team or working individually, you need a version control system to track the changes you made. As you edit and start building a project, you need version control, in Azure DevOps is built on top of Git which is the most common version control used today and becoming the factory standard for version control. 
 
 First I make a new repository
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/42151912/210071970-23386459-1509-4068-8aff-16cd806a9915.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/42151912/210071981-cfc232a6-1f4f-4e51-8d13-19a196fa62ba.png)
+
 
 Then I pull my code, by going to clone and because I’m using macOS I will pick SSH and copy it.
 
