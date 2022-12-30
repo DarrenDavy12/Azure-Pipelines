@@ -1,11 +1,13 @@
 # CI/CD YAML PIPELINES WITH AZURE DEVOPS
 
 
-[Create YAML pipeline in Azure DevOps: ](CI%20CD%20YAML%20PIPELINES%20WITH%20AZURE%20DEVOPS%202d9ff90d117049098566f59d941392c3/Create%20YAML%20pipeline%20in%20Azure%20DevOps%20433a40db53844358af9e3dd8176c24ff.md)
+[Create YAML pipeline in Azure DevOps: ](https://github.com/DarrenDavy12/AzureDevOps/tree/main/11.%20Create_YAML_pipeline_in_Azure_DevOps)
 
-[Using variables in YAML pipelines:](CI%20CD%20YAML%20PIPELINES%20WITH%20AZURE%20DEVOPS%202d9ff90d117049098566f59d941392c3/Using%20variables%20in%20YAML%20pipelines%208f66c4f1c8e64897882b972d0ed599bd.md)
+[Using variables in YAML pipelines:]
+(https://github.com/DarrenDavy12/AzureDevOps/tree/main/12.%20Using_variables_in_YAML_pipelines)
 
-[Configure YAML pipeline trigger:](CI%20CD%20YAML%20PIPELINES%20WITH%20AZURE%20DEVOPS%202d9ff90d117049098566f59d941392c3/Configure%20YAML%20pipeline%20trigger%208844e71ce1bf4ec2be2c03205aa50a39.md)
+[Configure YAML pipeline trigger:]
+(https://github.com/DarrenDavy12/AzureDevOps/tree/main/13.%20Configure_YAML_pipeline_trigger)
 
 
 ![Untitled](https://user-images.githubusercontent.com/42151912/210066870-cc8c7b48-4a6b-48b9-bea0-f6bde72690f2.png)
