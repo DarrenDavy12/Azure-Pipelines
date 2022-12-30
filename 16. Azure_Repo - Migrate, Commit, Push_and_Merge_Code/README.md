@@ -5,6 +5,7 @@ Code Management with Azure Repos
 
 Azure Repos - It is a version control tool that you could use to manage your code, whether you’re a software engineer working in a single team or working individually, you need a version control system to track the changes you made. As you edit and start building a project, you need version control, in Azure DevOps is built on top of Git which is the most common version control used today and becoming the factory standard for version control. 
 
+
 First I make a new repository
 
 ![Untitled](https://user-images.githubusercontent.com/42151912/210071970-23386459-1509-4068-8aff-16cd806a9915.png)
@@ -16,70 +17,91 @@ Then I pull my code, by going to clone and because I’m using macOS I will pick
 
 Paste it inside visual studio code. 
 
+
 1. To find RSA token - run `cat ~/.ssh/id_rsa.pub` and copy the whole key.
+ 
 2. Head to ‘manage ssh keys’ under the git clone link on Azure DevOps 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/42151912/210072023-0c64d586-1f27-433a-bdd3-88ae48e7cafd.png)
 
-1. Hit add and give name and paste key and save. 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%203.png)
+3. Hit add and give name and paste key and save. 
+
+![Untitled 3](https://user-images.githubusercontent.com/42151912/210072069-6aca40b5-acc5-437d-897b-9b9b0ef8f44d.png)
+
+
 
 I ran git clone command and it successfully pulled out the repo.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/42151912/210072113-1c9267bf-21d1-4f6f-8bed-c69f2f0a65d4.png)
 
-Open up the repo we pulled that contains a [README.md](http://README.md) file. 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%205.png)
 
-I make some changes to the [README.md](http://README.md) file, by adding integration test and unit test. Then I go to source tab in VSCode.
+Open up the repo we pulled that contains a [README.md] file. 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%206.png)
+![Untitled 5](https://user-images.githubusercontent.com/42151912/210072127-b3e3704e-c804-4624-8fae-faf03d624bfe.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%207.png)
+
+
+I make some changes to the [README.md] file, by adding integration test and unit test. Then I go to source tab in VSCode.
+
+![Untitled 6](https://user-images.githubusercontent.com/42151912/210072174-6315c4ec-6f64-4f75-98d0-bdb8c986ddc6.png)
+
+![Untitled 7](https://user-images.githubusercontent.com/42151912/210072180-f233ff1a-cee2-48d6-807d-9eaa01e2c1cf.png)
+
+
 
 I head back to the terminal and run a git status inside the repo directory and it has recognised my change. 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%208.png)
+![Untitled 8](https://user-images.githubusercontent.com/42151912/210072196-1fb4f6a4-c6e6-4ec8-a64d-4545724a3615.png)
+
+
 
 To see all the branches - run `git branch` for 1 branch and `git branch -a` for all branches.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%209.png)
+![Untitled 9](https://user-images.githubusercontent.com/42151912/210072207-8a36783c-04fe-47f6-ab6a-364ca799834c.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2010.png)
+![Untitled 10](https://user-images.githubusercontent.com/42151912/210072225-c475447b-d517-411e-b169-17f2dc028623.png)
+
 
 To create a new branch run `git branch feature/darren` and then run `git branch -a` again.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2011.png)
+![Untitled 11](https://user-images.githubusercontent.com/42151912/210072273-2698c9af-c237-4293-9d09-5fd77efe5bd7.png)
 
 Afterwards I run `git add .` and after a `git commit -m <message>` the message can be a work item ID number from my azure DevOps project for example. 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2012.png)
+![Untitled 12](https://user-images.githubusercontent.com/42151912/210072412-49cada92-5e6d-489d-aefc-f7890da16f81.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2013.png)
+![Untitled 13](https://user-images.githubusercontent.com/42151912/210072422-d8624b6a-40f5-4ef1-9ca9-281a65cf615c.png)
+
 
 Then a `git push` 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2014.png)
+![Untitled 14](https://user-images.githubusercontent.com/42151912/210072437-1f1c4ccd-4d0b-4ffc-a370-69bf71f8a130.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2015.png)
+![Untitled 15](https://user-images.githubusercontent.com/42151912/210072449-d35f05da-08cb-4f7f-a7eb-5535eca751f6.png)
+
+
 
 If I got back to Azure DevOps repo tab and go in history, we can see our comment and see the changes made inside.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2016.png)
+![Untitled 16](https://user-images.githubusercontent.com/42151912/210072470-279b6d4a-682c-4c73-94fd-2be7bb01efe9.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2017.png)
+![Untitled 17](https://user-images.githubusercontent.com/42151912/210072482-89e29be7-2fa9-44d5-93b8-90b5552a5d33.png)
 
-By click on [README.md](http://README.md) file in Repos/Files I can also edit files within Azure Repos by clicking on edit.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2018.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2019.png)
+By click on [README.md] file in Repos/Files I can also edit files within Azure Repos by clicking on edit.
+
+![Untitled 18](https://user-images.githubusercontent.com/42151912/210072509-a721aa24-822f-4ab7-a1ce-52ec10934988.png)
+
+![Untitled 19](https://user-images.githubusercontent.com/42151912/210072520-f407af11-909c-4125-9705-c9acaff36dc4.png)
+
 
 After applying a change, click commit to save the change. 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2020.png)
+![Untitled 20](https://user-images.githubusercontent.com/42151912/210072552-8115fdfb-efa1-423c-9257-a7e50e10a1af.png)
+
 
 Once I click commit, I can link other work items and click commit. 
 
