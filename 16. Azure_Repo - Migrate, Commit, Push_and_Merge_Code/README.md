@@ -13,6 +13,9 @@ First I make a new repository
 ![Untitled 1](https://user-images.githubusercontent.com/42151912/210071981-cfc232a6-1f4f-4e51-8d13-19a196fa62ba.png)
 
 
+
+
+
 Then I pull my code, by going to clone and because I’m using macOS I will pick SSH and copy it.
 
 Paste it inside visual studio code. 
