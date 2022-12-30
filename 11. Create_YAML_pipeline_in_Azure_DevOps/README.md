@@ -1,4 +1,4 @@
-# Create YAML pipeline in Azure DevOps:
+# Create YAML pipeline in Azure DevOps
 
 
 First I logged into my Azure DevOps account and made a new project called “Test” 
