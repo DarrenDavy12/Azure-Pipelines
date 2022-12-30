@@ -1,4 +1,4 @@
-# Using variables in YAML pipelines:
+# Using variables in YAML pipelines
 
 
 In the YAML file I added variables with a value with the default script and change script to call out a variable, see below: 
