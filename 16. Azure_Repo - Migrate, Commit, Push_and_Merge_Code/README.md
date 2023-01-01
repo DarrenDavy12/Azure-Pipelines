@@ -105,31 +105,37 @@ After applying a change, click commit to save the change.
 
 Once I click commit, I can link other work items and click commit. 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2021.png)
+![Untitled 21](https://user-images.githubusercontent.com/42151912/210167051-06a927c2-3e2e-4dd2-bf1b-3785d186f6c7.png)
+
 
 If I go back to work items under Boards, I can see on the right hand side under development my commits. Now the commit from my local system is now linked with my story.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2022.png)
+![Untitled 22](https://user-images.githubusercontent.com/42151912/210167057-4fcf10c4-e912-480e-b724-0472d6e90f2a.png)
+
 
 Somebody can look at my store changes and wants to make a comment along with what story. 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2023.png)
+![Untitled 23](https://user-images.githubusercontent.com/42151912/210167062-67cfa4d5-d60a-4f6f-b27c-91b268e7ff53.png)
+
 
 Migrate Repo from GitHub - Commit Code from Local
 
 First I do a `git pull` 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2024.png)
+![Untitled 24](https://user-images.githubusercontent.com/42151912/210167066-36d58201-0ff4-4713-9ee7-df1863aab2a9.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2025.png)
+![Untitled 25](https://user-images.githubusercontent.com/42151912/210167090-c2999a41-3315-4731-ac9e-c15ecf21fdaf.png)
+
 
 Then I switch branch using `git checkout feature/<name>`
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2026.png)
+![Untitled 26](https://user-images.githubusercontent.com/42151912/210167098-982359ce-6437-4931-8a38-a7c96f73a23c.png)
+
 
 I run `git branch` it should now be pointing to the feature branch.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2027.png)
+![Untitled 27](https://user-images.githubusercontent.com/42151912/210167103-73618e1b-62e0-4cc4-9a6d-567b4fe4bed6.png)
+
 
 Now, whatever changes I made, if I add a new file called `[main.tf](http://main.tf)` for example. 
 
@@ -137,78 +143,94 @@ Generally everything is not pushed on the master branch, that why we make our ow
 
 So I added an terraform file and made a resource with some values.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2028.png)
+![Untitled 28](https://user-images.githubusercontent.com/42151912/210167105-adc1efb7-b74a-4871-84cf-2aa5742ee2dc.png)
+
 
 Then if go to source control on vscode and see the changes. I can also make git commits in the little text box on the upper left hand side and reference a work item ID with some text for the commit. 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2029.png)
+![Untitled 29](https://user-images.githubusercontent.com/42151912/210167111-1b24f3a7-a906-4432-9941-8b45ec3acdd4.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2030.png)
+![Untitled 30](https://user-images.githubusercontent.com/42151912/210167117-c6bc8cc3-97f8-49a1-8945-09d70ac1df7e.png)
+
 
 Afterwards I ran a `git push` , since it is not my master branch I must run `git push --set-upstream origin feature/<name>` 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2031.png)
+![Untitled 31](https://user-images.githubusercontent.com/42151912/210167150-b9fd1e96-3726-4955-a832-fa62e54e89e8.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2032.png)
+![Untitled 32](https://user-images.githubusercontent.com/42151912/210167160-39a11bd2-b331-4314-8eaf-246df4439dc3.png)
+
 
 Now I go back to my repo in Azure DevOps and click on main at the top, we see that has appeared. 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2033.png)
+![Untitled 33](https://user-images.githubusercontent.com/42151912/210167195-306eb941-a8c9-4087-aec5-c5f6171661bc.png)
+
 
 I can also make a pull request under tags, make a new pull request, add a description and add a reviewer. Afterwards I hit create. 
 
 Pull request is for when you don’t want to work on a master branch, it lets others know about the changes you pushed to your branch. When you open a new pull request, which we’re going to do right now, you can discuss and review potential changes you’ve made with the other team members.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2034.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2035.png)
+![Untitled 34](https://user-images.githubusercontent.com/42151912/210167203-72bbb697-e032-4a7c-8f99-b77dd538c9f0.png)
+
+![Untitled 35](https://user-images.githubusercontent.com/42151912/210167209-4a67ac51-00b6-49f5-95cc-b44374c35007.png)
+
 
 I can also head over to commits tab next to updates and any changes we are not happy with, we can go ahead and make the comment as well. 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2036.png)
+![Untitled 36](https://user-images.githubusercontent.com/42151912/210167214-f4f9c892-f52f-4bf6-a81d-a997eb581813.png)
+
 
 Then I head back to VSCode and create a `[var.tf](http://var.tf)` for my variables.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2037.png)
+![Untitled 37](https://user-images.githubusercontent.com/42151912/210167220-cb6f637e-39f0-45dc-8a93-72b2892ce571.png)
+
 
 In the [main.tf](http://main.tf) next to name put the variable and commit changes.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2038.png)
+![Untitled 38](https://user-images.githubusercontent.com/42151912/210167231-f35d4e69-0c24-437c-9f45-ac68bf21ecf6.png)
+
 
 Run a `git pull` 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2039.png)
+![Untitled 39](https://user-images.githubusercontent.com/42151912/210167236-bf97363c-6337-4ada-a778-089ce3db8494.png)
+
 
 Then I go to source control on the left hand side and make a commit.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2040.png)
+![Untitled 40](https://user-images.githubusercontent.com/42151912/210167242-ff4505a8-9d88-4b23-8b31-fcd0d0aac822.png)
+
 
 Run a `git push` afterwards.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2041.png)
+![Untitled 41](https://user-images.githubusercontent.com/42151912/210167249-a1fbf1a6-27ce-4b35-8144-7afc7d1fad46.png)
+
 
 Back on pull requests on Azure DevOps, we can view the commit. I can also have approve and rejection options. 
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2042.png)
+![Untitled 42](https://user-images.githubusercontent.com/42151912/210167256-58869e82-2095-4e12-81e1-65266de8a440.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2043.png)
+![Untitled 43](https://user-images.githubusercontent.com/42151912/210167283-77eb8442-eb20-45bf-a7f1-3a75bf199645.png)
+
 
 Then I go back and select master branch under repos/files, head back to pull request, click on request and click complete. This will merge it back with the main branch.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2044.png)
+![Untitled 44](https://user-images.githubusercontent.com/42151912/210167290-e9544b8f-319a-41c1-81c9-2142bae917f3.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2045.png)
+![Untitled 45](https://user-images.githubusercontent.com/42151912/210167294-09a1b0c1-9c80-46fd-9ccd-c960f595eec0.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2046.png)
+![Untitled 46](https://user-images.githubusercontent.com/42151912/210167296-c12c29e3-d39b-49b4-a0c9-ab7be388e9c2.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2047.png)
+![Untitled 47](https://user-images.githubusercontent.com/42151912/210167299-ae2624b1-33c9-4724-9a4b-1eb0922024a8.png)
+
 
 If I head back to files, we can see that [main.tf](http://main.tf) and [var.tf](http://var.tf) have been added.
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2048.png)
+![Untitled 48](https://user-images.githubusercontent.com/42151912/210167308-f5b09946-025e-4098-9e4a-5cd628ef3575.png)
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2049.png)
+![Untitled 49](https://user-images.githubusercontent.com/42151912/210167310-f58bbc9c-f228-407e-af32-9cb34f5f0312.png)
+
 
 Then I run a `git pull`
 
-![Untitled](Azure%20Repo%20-%20Migrate,%20Commit,%20Push%20and%20Merge%20Code%2006d22125eee14e959845a7897fed5ecd/Untitled%2050.png)
+![Untitled 50](https://user-images.githubusercontent.com/42151912/210167331-6aa121e5-8426-4af9-8bc8-0462d80c9d94.png)
+
