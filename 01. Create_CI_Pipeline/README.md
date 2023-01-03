@@ -1,6 +1,6 @@
 # (Azure) Creating Java CI pipeline:
 
-To start off I head over to Azure DevOps website, create project and give name some what referencing the name of the project I forked over a SCM in which one I am using is GitHub.→
+To start off, I head over to Azure DevOps website, create project and give name some what referencing the name of the project I forked over a SCM in which one I am using is GitHub.→
 
 
 Give name and select public → 
